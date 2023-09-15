@@ -1,4 +1,4 @@
-# meta-test
+# meta-test-riscv
 
 Yocto test layer
 
