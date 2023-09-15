@@ -6,5 +6,7 @@
 # For StarFive VisionFive 2
 PACKAGECONFIG_FONTS_jh7110 = "fontconfig"
 PACKAGECONFIG:remove:jh7110 = "tests x11 wayland"
-PACKAGECONFIG:append:jh7110 = " examples accessibility eglfs gles2 gbm linuxfb tslib libinput"
+# Works with RPi4: PACKAGECONFIG:append:jh7110 = " examples accessibility eglfs gles2 gbm linuxfb tslib libinput"
+
+PACKAGECONFIG:append:jh7110 = " examples accessibility gles2 linuxfb tslib libinput"
 
