@@ -11,7 +11,7 @@
 BUILD_CC_ARCH += "_zihintpause"
 
 
-do_configure_append() {
+do_compile_prepend() {
 	# Make clean required?
 	echo "riscv64-poky-linux-g++ -dumpspecs = "
 	echo riscv64-poky-linux-g++ -dumpspecs
