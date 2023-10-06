@@ -10,12 +10,6 @@
 # Correct machine architecture for this chip 
 BUILD_CC_ARCH += "_zihintpause"
 
-do_compile:prepend() {
-	# Make clean required?
-	echo "riscv64-poky-linux-g++ -dumpspecs = "
-	echo riscv64-poky-linux-g++ -dumpspecs
-}
-
 # Recipe that provides libgles3 libgles2 libgles1:
 # https://layers.openembedded.org/layerindex/recipe/333647/
 
