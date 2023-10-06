@@ -10,7 +10,7 @@
 # Correct machine architecture for this chip 
 BUILD_CC_ARCH += "_zihintpause"
 
-do_compile_prepend() {
+do_compile:prepend() {
 	# Make clean required?
 	echo "riscv64-poky-linux-g++ -dumpspecs = "
 	echo riscv64-poky-linux-g++ -dumpspecs
