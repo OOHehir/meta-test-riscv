@@ -8,7 +8,7 @@
 
 
 # Correct machine architecture for this chip 
-TUNE_ARCH:append = "_zihintpause"
+# TUNE_ARCH:append = "_zihintpause"
 
 # Recipe that provides libgles3 libgles2 libgles1:
 # https://layers.openembedded.org/layerindex/recipe/333647/
